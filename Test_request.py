@@ -47,4 +47,4 @@ body = {
         "nX":0
 }
 response = requests.post(url, data=body)
-response.json()
+print(response.json())
