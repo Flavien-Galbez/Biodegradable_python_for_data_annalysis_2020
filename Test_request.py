@@ -44,7 +44,7 @@ body = {
         "Psi_i_A":1.967,
         "nN":0,
         "nArCOOR":0,
-        "nX":0,
+        "nX":0
 }
 response = requests.post(url, data=body)
 response.json()
