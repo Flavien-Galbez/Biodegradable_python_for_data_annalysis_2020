@@ -24,7 +24,7 @@ class Predict(Resource):
 
     @staticmethod
     def post():
-        #On cree un disctionnaire avec tout les parametres utilises dans les modeles
+        #On cree un dictionnaire avec tout les parametres utilises dans les modeles
         parser = reqparse.RequestParser()
         parser.add_argument('SpMax_L')
         parser.add_argument('J_Dz(e)')
@@ -80,5 +80,6 @@ class Predict(Resource):
 
 API.add_resource(Predict, '/predict')
 
+#Sur le port 1200
 if __name__ == '__main__':
     APP.run(debug=True, port='1200')
