@@ -6,7 +6,9 @@ Created on Sat Jan  9 11:05:55 2021
 """
 import requests
 
-url = 'http://127.0.0.1:1200/predict'  # localhost and the defined port + endpoint
+url = 'http://127.0.0.1:1200/predict'  #port 1200 comme defini precedement
+
+#Parametres correspondant a ceux de la deuxieme molecule du dataset
 body = {
         "SpMax_L":4.170,
         "J_Dz(e)":2.1144,
